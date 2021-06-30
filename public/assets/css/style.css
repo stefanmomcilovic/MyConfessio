@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fefec7;
+}
+
+pre{
+    color: #fff;
+}
+
+hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-up-button a{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 999;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.top-up-button a i:hover{
+   text-shadow: 1.5px 1.5px 1.5px #797979;
+   transition: all 0.5s ease;
+}
+
+.action-active{
+    border-top: 1px solid #fefec7 !important;
+}
+
+.comment-action-active{
+    border-bottom: 1px solid #fefec7 !important;
+}
+
+/* Index.php CSS */
+.brand{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.search-form{
+    position: relative;
+}
+
+.search-form i {
+    position: absolute;
+    left: 5%;
+    top: 32%;
+    color: #000;
+}
+
+.search-form .text{
+    padding-left: 45px;
+}
+
+.sortby-submenu {
+    background-color: #343a40;
+    width: auto;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+.sortby-btn{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.sortby-btn:hover{
+    color: #d2cfcf;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#confessions{
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.my-confession{
+    background-color: rgba(50, 50, 50, .2);
+    letter-spacing: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.values{
+    border: 1px solid rgba(200, 200, 200, .1);
+    padding-bottom: 0px !important;
+}
+
+.actions{
+    border-right: 1px solid rgba(200, 200, 200, .1);
+    border-left: 1px solid rgba(200, 200, 200, .1);
+    padding-top: 0px !important;
+}
+
+.actions input[type="button"], button{
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.actions button:focus{
+    outline: none;
+}
+
+.actions input[type="button"]:hover, button:hover{
+    cursor: pointer;
+    background-color: rgba(40, 40, 40, .5);
+}
+
+.size{
+    font-size: 24px;
+}
+
+.page-link{
+    color: #fff;
+    background-color: #201c1d;
+    border: 1px solid #fefec7;
+}
+
+.page-link:hover{
+    color: #000;
+}
+
+.page-link:focus{
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.64);
+}
+
+.active-page{
+    background-color: #e9ecef;
+    border: 4px solid #000;
+    border-top-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    color: #000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* End of Index.php CSS */
+
+/* Confess.php CSS */
+.confession-textarea{
+    color: #fff;
+    border: 1px solid #414142;
+    background-color: transparent;
+}
+
+.confession-textarea:focus{
+    border: 1px solid #414142;
+    background-color: transparent;
+    box-shadow: 0 0 0 .2rem rgba(53, 53, 53, 0.25);
+    color: #fff;
+}
+
+.confession-textarea:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(53, 53, 53, 0.25);
+}
+
+.confession-textarea:visited{
+    text-decoration: none;
+}
+
+.post-confess{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(60, 60, 60, .4);
+    border: 1px solid rgba(60, 60, 60, .5);
+}
+
+.post-confess:hover{
+    cursor: pointer;
+    background-color: rgba(75, 75, 75, .4);
+    border: 1px solid rgba(75, 75, 75, .5);
+}
+/* End of Confess.php CSS */
+
+/* Single_Confess.php CSS */
+#comment_text{
+    resize: none;
+}
+
+.comment-action:focus{
+    outline: none;
+}
+/* End of Single_Confess.php CSS */
+@media only screen and (max-width: 600px) {
+    .pagination {
+        display: block !important;
+    }
+
+    .page-item{
+        margin-bottom: 1em;
+    }
+}
